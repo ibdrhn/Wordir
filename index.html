@@ -1,30 +1,164 @@
-<!DOCTYPE html>
-<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./assets/logo_v_simple.png" type="image/x-icon">
-    <!-- tailwind css cdn link -->
-    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
-    <title>Document</title>
-    <style type="text/tailwindcss">
-    :root{
-        --primary-clr: #008DD5;
-        --secondary-clr: ;
-        --primary-blc: ;
-        --secondary-blc: ;
-    }
-    .bg-primary{
-        background-color: var(--primary-blc);
-    }      
-    </style>
+<!--   tailwind css   -->
+      <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+<!--   font awsome cdn   -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
-    <header role="Wordir header" class=" w-full p-8 ">
-        <div role="Logo box" class="">
-            <img src="./assets/logo_v_simple.png" alt="Wordir's logo">
-            <h1 class=""></h1>
+<body class="max-w-full">
+  <header class="mx-auto mt-2 flex w-full items-center justify-center gap-4 py-3 md:justify-start md:pl-4 xl:max-w-[1440px]">
+    <div role="logo-box" class="flex items-center">
+      <img src="https://github.com/ibdrhn/Wordir/blob/main/assets/logo_v_simple.png?raw=true" alt="Wordir logo" class="max-w-10 pr-2" />
+      <h1 role="logo-heading" class="border-l-2 border-[--primary] pl-2 text-xl text-[--primary] md:text-2xl">wordir</h1>
+    </div>
+    <nav class="wdr-text">
+      <ul class="flex items-center gap-2">
+        <li class="capitalize hover:underline"><a href="#">about</a></li>
+        <li>
+          <a href="#">
+            <svg class="wdr-svg" role="facebook icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+              <path d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z" />
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <svg class="wdr-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+              <path d="M524.5 69.8a1.5 1.5 0 0 0 -.8-.7A485.1 485.1 0 0 0 404.1 32a1.8 1.8 0 0 0 -1.9 .9 337.5 337.5 0 0 0 -14.9 30.6 447.8 447.8 0 0 0 -134.4 0 309.5 309.5 0 0 0 -15.1-30.6 1.9 1.9 0 0 0 -1.9-.9A483.7 483.7 0 0 0 116.1 69.1a1.7 1.7 0 0 0 -.8 .7C39.1 183.7 18.2 294.7 28.4 404.4a2 2 0 0 0 .8 1.4A487.7 487.7 0 0 0 176 479.9a1.9 1.9 0 0 0 2.1-.7A348.2 348.2 0 0 0 208.1 430.4a1.9 1.9 0 0 0 -1-2.6 321.2 321.2 0 0 1 -45.9-21.9 1.9 1.9 0 0 1 -.2-3.1c3.1-2.3 6.2-4.7 9.1-7.1a1.8 1.8 0 0 1 1.9-.3c96.2 43.9 200.4 43.9 295.5 0a1.8 1.8 0 0 1 1.9 .2c2.9 2.4 6 4.9 9.1 7.2a1.9 1.9 0 0 1 -.2 3.1 301.4 301.4 0 0 1 -45.9 21.8 1.9 1.9 0 0 0 -1 2.6 391.1 391.1 0 0 0 30 48.8 1.9 1.9 0 0 0 2.1 .7A486 486 0 0 0 610.7 405.7a1.9 1.9 0 0 0 .8-1.4C623.7 277.6 590.9 167.5 524.5 69.8zM222.5 337.6c-29 0-52.8-26.6-52.8-59.2S193.1 219.1 222.5 219.1c29.7 0 53.3 26.8 52.8 59.2C275.3 311 251.9 337.6 222.5 337.6zm195.4 0c-29 0-52.8-26.6-52.8-59.2S388.4 219.1 417.9 219.1c29.7 0 53.3 26.8 52.8 59.2C470.7 311 447.5 337.6 417.9 337.6z" />
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="mx-auto w-full px-4 md:px-8 lg:px-6 xl:max-w-[1440px]">
+    <!-- hero section starts here -->
+    <section class="relative h-[100vh] w-full overflow-hidden rounded-xl md:mt-4 md:h-[500px] lg:h-[400px]">
+      <img class="hero-fx-item object-cover" src="https://images.unsplash.com/photo-1599249301066-2fde88763196?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="hero image" />
+      <div class="hero-fx-item flex flex-col items-center justify-center gap-4 bg-[--trans-bg] text-center text-white lg:px-[250px]">
+        <div role="wdr-branding" class="text-[--subheading-1]capitalize w-fit border p-1 capitalize md:text-xl">wordir</div>
+        <h1 class="text-2xl capitalize md:text-4xl">Your English Learning Hub</h1>
+        <p class="px-3 md:text-lg">Improve speaking, listening, and writing skills. Access grammar resources, vocabulary, and expert tutoring. Ace English tests and quizzes. Start your journey to English mastery</p>
+        <a href="#" class="wdr-button -hover bg-[--primary]">
+          <span class="wdr-button-span text-white">Start today</span>
+          <svg class="fill-white" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"><path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z" /></svg>
+        </a>
+      </div>
+    </section>
+    <!-- hero section ends here -->
+    <!-- about section begins here -->
+    <section class="mx-auto my-7 flex flex-col gap-3 sm:w-full md:w-2/3 lg:w-full lg:flex-row lg:items-center lg:gap-6">
+      <img src="https://images.unsplash.com/photo-1604866830172-c9427272ccf3?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Wordir about image" class="lg:max-w-1/3 mx-auto h-[300px] w-[300px] rounded-t-[50%] object-cover md:max-h-[400px] md:max-w-[400px] md:rounded-t-[100%] lg:mx-0" />
+      <div class="wdr-content wdr-text flex flex-col gap-2 lg:w-2/3 lg:pr-16">
+        <h1 class="wdr-page-heading">who are we?</h1>
+        <p>Discover Wordir, where English mastery begins. Our team of language enthusiasts, educators, and experts is committed to your learning journey. Whether you’re a novice or aspiring polyglot, Wordir empowers you with resources, tutoring, and engaging content. Join our vibrant community today!</p>
+        <a href="#" class="wdr-button border border-[--primary] hover:bg-[--primary]">
+          <span class="wdr-button-span">read more</span>
+          <svg class=" wdr-svg fill-[--primary]" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z" /></svg>
+        </a>
+      </div>
+    </section>
+    <!-- about section ends here -->
+    <!-- benefit section starts here -->
+    <section class="wdr-text  md:mx-auto md:w-10/12 lg:w-full lg:my-10">
+      <h1 class="wdr-page-heading mx-auto">benefits</h1>
+      <div class="flex flex-col justify-center gap-4 py-4 lg:grid grid-cols-3">
+        <div class="wdr-benefit-box">
+          <svg class="wdr-benefit-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M80 0v-160h800V0H80Zm160-320h56l312-311-29-29-28-28-311 312v56Zm-80 80v-170l448-447q11-11 25.5-17t30.5-6q16 0 31 6t27 18l55 56q12 11 17.5 26t5.5 31q0 15-5.5 29.5T777-687L330-240H160Zm560-504-56-56 56 56ZM608-631l-29-29-28-28 57 57Z" /></svg>
+          <h1 class="wdr-benefit-heading">Enhance your writting</h1>
+          <p>We provide resources such as grammar notes to help improve your writing skills. It aims to support learners in developing better writing proficiency through structured guidance and practical tips</p>
         </div>
-    </header>
+        <div class="wdr-benefit-box">
+          <svg class="wdr-benefit-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M160-391h45l23-66h104l24 66h44l-97-258h-46l-97 258Zm81-103 38-107h2l38 107h-78Zm319-70v-68q33-14 67.5-21t72.5-7q26 0 51 4t49 10v64q-24-9-48.5-13.5T700-600q-38 0-73 9.5T560-564Zm0 220v-68q33-14 67.5-21t72.5-7q26 0 51 4t49 10v64q-24-9-48.5-13.5T700-380q-38 0-73 9t-67 27Zm0-110v-68q33-14 67.5-21t72.5-7q26 0 51 4t49 10v64q-24-9-48.5-13.5T700-490q-38 0-73 9.5T560-454ZM260-320q47 0 91.5 10.5T440-278v-394q-41-24-87-36t-93-12q-36 0-71.5 7T120-692v396q35-12 69.5-18t70.5-6Zm260 42q44-21 88.5-31.5T700-320q36 0 70.5 6t69.5 18v-396q-33-14-68.5-21t-71.5-7q-47 0-93 12t-87 36v394Zm-40 118q-48-38-104-59t-116-21q-42 0-82.5 11T100-198q-21 11-40.5-1T40-234v-482q0-11 5.5-21T62-752q46-24 96-36t102-12q58 0 113.5 15T480-740q51-30 106.5-45T700-800q52 0 102 12t96 36q11 5 16.5 15t5.5 21v482q0 23-19.5 35t-40.5 1q-37-20-77.5-31T700-240q-60 0-116 21t-104 59ZM280-499Z" /></svg>
+          <h1 class="wdr-benefit-heading">Improve your reading</h1>
+          <p>Wordir uses chunking techniques to enhance reading skills. Learners process larger word groups for faster comprehension. Word analysis helps break down words, improving understanding, vocabulary properly.</p>
+        </div>
+        <div class="wdr-benefit-box">
+          <svg class="wdr-benefit-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="m798-322-62-62q44-41 69-97t25-119q0-63-25-118t-69-96l62-64q56 53 89 125t33 153q0 81-33 153t-89 125ZM670-450l-64-64q18-17 29-38.5t11-47.5q0-26-11-47.5T606-686l64-64q32 29 50 67.5t18 82.5q0 44-18 82.5T670-450Zm-310 10q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM40-120v-112q0-33 17-62t47-44q51-26 115-44t141-18q77 0 141 18t115 44q30 15 47 44t17 62v112H40Zm80-80h480v-32q0-11-5.5-20T580-266q-36-18-92.5-36T360-320q-71 0-127.5 18T140-266q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T440-600q0-33-23.5-56.5T360-680q-33 0-56.5 23.5T280-600q0 33 23.5 56.5T360-520Zm0-80Zm0 400Z" /></svg>
+          <h1 class="wdr-benefit-heading">Speak together</h1>
+          <p>The learners enhances their speaking skills through diverse resources provided by Wordir. Learners watch English movies to grasp natural speech patterns, access PDFs and books to expand vocabulary, and engage with interactive content like quizzes.</p>
+        </div>
+      </div>
+    </section>
+    <!-- benefit section ends here -->
+    <!-- services section starts here -->
+    <section class="wdr-service">
+      <div class="lg:w-1/2 mb-4 lg:text-left">
+        <h1 class="wdr-page-heading mx-auto sm:mb-3 lg:mx-0">What do we provide?</h1>
+        <p class="my-2">
+          We provide valuable resources. Members watch English movies to grasp natural speech patterns and accents. Access to PDFs and books expands vocabulary and deepens understanding. Interactive content, including quizzes and dialogues, hones speaking, pronunciation, and comprehension skills
+        </p>
+      </div>
+      <div class="wdr-service-grid">
+        <div class="wdr-service-box">
+          <img class="wdr-service-box-img" src="https://github.com/ibdrhn/Wordir/blob/main/assets/wdwp/books.jpg?raw=true" alt="books">
+          <div class="wdr-service-img-box">
+            <h1 class="wdr-service-img-box-h1">books</h1>
+          </div>
+        </div>
+        <div class="wdr-service-box">
+          <img src="https://github.com/ibdrhn/Wordir/blob/main/assets/wdwp/movies.jpg?raw=true" alt="" class="wdr-service-box-img">
+          <div class="wdr-service-img-box">
+            <h1 class="wdr-service-img-box-h1">movies</h1>
+          </div>
+        </div>
+        <div class="wdr-service-box">
+          <img src="https://github.com/ibdrhn/Wordir/blob/main/assets/wdwp/notes.jpg?raw=true" alt="" class="wdr-service-box-img">
+          <div class="wdr-service-img-box">
+            <h1 class="wdr-service-img-box-h1">notes</h1>
+          </div>
+        </div>
+        <div class="wdr-service-box">
+          <img src="https://github.com/ibdrhn/Wordir/blob/main/assets/wdwp/support.jpg?raw=true" alt="" class="wdr-service-box-img">
+          <div class="wdr-service-img-box">
+            <h1 class="wdr-service-img-box-h1">support</h1>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- services section ends here -->
+    <!-- community section starts here -->
+    <section class="wdr-cmnty">
+      <h1 class="wdr-page-heading mx-auto">Join our communities</h1>
+      <p class="wdr-cmnty-text">
+        Join our friendly and helpful communities on various social media platforms. We have a Facebook group that provides free resources to enhance your current English level and boost your confidence in speaking. Additionally, we’ve created a Discord server where you can chat and converse with others in English, helping you gain confidence while practicing the language.
+      </p>
+      <div class=" w-max mx-auto wdr-button-group flex items-center justify-center flex-col gap-8 lg:flex-row">
+        <a href="" class="wdr-button w-full p-3 border border-[--primary] hover:bg-[--primary]">
+          <svg class="wdr-svg fill-[--primary]" role="facebook icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+              <path d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z" />
+            </svg>
+          <span class="text-[--primary]">Join our Facebook group</span>
+          <svg class=" wdr-svg fill-[--primary]" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z" /></svg>
+        </a>
+        <a href="" class="wdr-button w-full p-3 border border-[--primary] hover:bg-[--primary]">
+          <svg class="wdr-svg fill-[--primary]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+              <path d="M524.5 69.8a1.5 1.5 0 0 0 -.8-.7A485.1 485.1 0 0 0 404.1 32a1.8 1.8 0 0 0 -1.9 .9 337.5 337.5 0 0 0 -14.9 30.6 447.8 447.8 0 0 0 -134.4 0 309.5 309.5 0 0 0 -15.1-30.6 1.9 1.9 0 0 0 -1.9-.9A483.7 483.7 0 0 0 116.1 69.1a1.7 1.7 0 0 0 -.8 .7C39.1 183.7 18.2 294.7 28.4 404.4a2 2 0 0 0 .8 1.4A487.7 487.7 0 0 0 176 479.9a1.9 1.9 0 0 0 2.1-.7A348.2 348.2 0 0 0 208.1 430.4a1.9 1.9 0 0 0 -1-2.6 321.2 321.2 0 0 1 -45.9-21.9 1.9 1.9 0 0 1 -.2-3.1c3.1-2.3 6.2-4.7 9.1-7.1a1.8 1.8 0 0 1 1.9-.3c96.2 43.9 200.4 43.9 295.5 0a1.8 1.8 0 0 1 1.9 .2c2.9 2.4 6 4.9 9.1 7.2a1.9 1.9 0 0 1 -.2 3.1 301.4 301.4 0 0 1 -45.9 21.8 1.9 1.9 0 0 0 -1 2.6 391.1 391.1 0 0 0 30 48.8 1.9 1.9 0 0 0 2.1 .7A486 486 0 0 0 610.7 405.7a1.9 1.9 0 0 0 .8-1.4C623.7 277.6 590.9 167.5 524.5 69.8zM222.5 337.6c-29 0-52.8-26.6-52.8-59.2S193.1 219.1 222.5 219.1c29.7 0 53.3 26.8 52.8 59.2C275.3 311 251.9 337.6 222.5 337.6zm195.4 0c-29 0-52.8-26.6-52.8-59.2S388.4 219.1 417.9 219.1c29.7 0 53.3 26.8 52.8 59.2C470.7 311 447.5 337.6 417.9 337.6z" />
+            </svg>
+          <span class="text-[--primary]">Join our discord server</span>
+          <svg class=" wdr-svg fill-[--primary]" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z" /></svg>
+        </a>
+      </div>
+    </section>
+    <!-- community section ends here -->
+    <!-- footer starts here -->
+    <footer class="w-full grid gap-3 wdr-text">
+      <div role="logo-box" class="flex items-center w-fit mx-auto">
+      <img src="https://github.com/ibdrhn/Wordir/blob/main/assets/logo_v_simple.png?raw=true" alt="Wordir logo" class="max-w-16 pr-2" />
+      <h1 role="logo-heading" class="border-l-2 border-[--primary] pl-2 text-[--primary] text-4xl">wordir</h1>
+    </div>
+    <nav class="w-full px-8">
+      <ul class="wdr-footer-link flex flex-wrap gap-3 justify-center">
+        <li class="w-fit">Home</li>
+        <li class="w-fit">About us</li>
+        <li class="w-fit">FB community</li>
+        <li class="w-fit">Discord server</li>
+        <li class="w-fit">Terms and conditions</li>
+        <li class="w-fit">Privacy policy</li>
+        <li class="w-fit">Contact us</li>
+      </ul>
+    </nav>
+    <p class="border-t border-[--secondary-blk] py-2 text-center">Designed and developed by <a href="">@cybaazz</a></p>
+     </footer>
+    <!-- footer ends here -->
+  </main>
 </body>
-</html>
