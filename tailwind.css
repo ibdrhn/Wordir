@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+  *{
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    color: var(--secondary-blk);
+    line-height: 1.25rem;
+  }
+  :root{
+    --primary: #008DD5;
+    --primary-10: #E6F4FB;
+    --primary-50: #008ed536;
+    --primary-blk: #373F51;
+    --primary-blk-50: #373f5191;
+    --secondary-blk: #291711;
+    --trans-bg: rgba(41,23,17,0.6);
+    --item-bg: linear-gradient(0deg, red, green);
+  }
+}
+@layer components{
+  .wdr-svg{
+    @apply fill-[--primary-blk] w-5 lg:w-6
+  }
+  .wdr-text{
+    @apply text-xs md:text-sm
+  }
+  .hero-fx-item{
+    @apply absolute top-0 w-full h-full
+  }
+  .hero-fx-item > *{
+    color: white;
+  }
+  .wdr-button{
+    @apply flex items-center gap-2 p-2 w-fit capitalize
+  }
+  .-hover{
+    @apply transition-all ease-in-out hover:bg-transparent hover:outline hover:outline-1 hover:-outline-offset-1
+  }
+  .wdr-button:hover > svg{
+    fill: white;
+  }
+  .wdr-button:hover > span{
+    color: white;
+  }
+  .wdr-button-span{
+    @apply text-xs transition-all ease-in-out hover:underline md:text-sm
+  }
+  .wdr-page-heading{
+    @apply w-fit pb-3 first-letter:capitalize text-2xl lg:text-4xl border-b-[5px] border-[--primary] font-medium
+  }
+  .wdr-benefit-box{
+    @apply max-w-full bg-[--primary-10] p-3
+  }
+  .wdr-benefit-svg{
+    @apply fill-[--primary-blk] w-8 md:w-10
+  }
+  .wdr-benefit-heading{
+    @apply  text-lg py-2;
+  }
+  .wdr-service{
+    @apply wdr-text px-8 my-8 md:w-5/6 mx-auto text-center lg:w-full lg:flex lg:justify-between lg:items-center lg:my-12
+  }
+  .wdr-service-grid{
+    @apply grid grid-cols-2 grid-rows-2 gap-2 sm:px-4 md:w-4/6 lg:w-1/3 md:mx-auto lg:mx-0
+  }
+  .wdr-service-box{
+    @apply relative
+  }
+  .wdr-service-box-img{
+    @apply w-full h-full object-cover
+  }
+  .wdr-service-img-box{
+    @apply absolute top-0 left-0 w-full h-full bg-gradient-to-b from-transparent to-[--primary-blk] content-end text-center pb-4
+  }
+  .wdr-service-img-box-h1{
+    @apply capitalize text-sm text-white lg:text-xl
+  }
+  .wdr-cmnty{
+    @apply w-full bg-[--primary-10] my-10 py-4 px-6 text-[--primary-blk] lg:px-[200px]
+  }
+  .wdr-cmnty-text{
+    @apply wdr-text py-4 text-center leading-5
+  }
+  .wdr-footer-link > li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}
