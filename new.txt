@@ -1,6 +1,4 @@
-hero image
-https://images.unsplash.com/photo-1599249301066-2fde88763196?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
-
-about image
-https://images.unsplash.com/photo-1604866830172-c9427272ccf3?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
-
+the code is only supported on
+https://play.tailwindcss.com
+use the link below to see the website live
+https://play.tailwindcss.com/wEfyK8amd3?size=1708x1183&file=css
